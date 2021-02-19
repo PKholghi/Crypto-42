@@ -32,8 +32,6 @@
                             Math.sin(dLon / 2) * Math.sin(dLon / 2);
                         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
                         var d = R * c;
-
-                        alert("you are " + d + " kilometers away!");
                         var distance = document.createElement("p");
                         distance.innerHTML = "You are " + Math.round(d) + " kilometers away!";
                         document.body.appendChild(distance);
@@ -45,7 +43,6 @@
                      function showLocation(position) {
                             var lat2 = position.coords.latitude;
                             var lon2 = position.coords.longitude;
-                            alert("Latitude : " + lat2 + " Longitude: " + lon2);
                             calculateDistance(lat1, lon1, lat2, lon2);
                         }
 

@@ -1,0 +1,117 @@
+.card {
+    box-shadow: 0 0 20px 7px rgba(0,0,0,0.1);
+}
+
+.product-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-text {
+    text-align: center;
+    margin: 0;
+}
+
+.card-button {
+    padding-top: 15px;
+}
+
+.card-body a:hover {
+    color: #63a6b0;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(33, 37, 41);
+    box-shadow: 0 50vh 0 50vh rgb(33, 37, 41);
+}
+
+.footer-card {
+    background-color: rgb(33, 37, 41);
+}
+
+.footer-title {
+    margin-bottom: 20px;
+    color: rgb(255, 174, 0);
+}
+
+.footer-text {
+    margin: 13px
+}
+
+a {
+    color:white !important;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration: rgb(255, 174, 0);
+}
+
+.navbar {
+    margin-top: 30px;
+    min-height: 60px;
+  }
+  
+  .navbar-brand {
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .nav-item .home {
+    background-color: rgb(204, 167, 6);
+  }
+  
+  .nav-item .home:hover {
+    background-color: rgb(175, 141, 5);
+  }
+  
+  .nav-item a {
+    text-align: center;
+    padding: 20px 55px;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .nav-item a:hover {
+    background-color: grey;
+    color: rgb(204, 167, 6);
+  }
+  
+  nav.navbar {
+    padding: 0 1rem;
+  }
+  
+  .dropdown-menu {
+    background-color: rgb(37, 43, 48);
+  }
+  
+  .navbar form {
+    max-height: 40px;
+    margin: 10px 0 10px;
+  }
+  
+  .nav-item button {
+    background-color: rgb(204, 167, 6);
+    border: none;
+    color: white;
+    margin-left: 15px;
+  }
+  
+  .nav-item button:hover {
+    background-color: rgb(175, 141, 5);
+  }
+  
+  #image-carousel {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 90%;
+    margin: 20px auto 30px auto;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    #image-carousel {
+      max-width: 70%;
+    }
+  }
+  

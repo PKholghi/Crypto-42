@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Crypto_42</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!--Navigation bar-->
+    
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Crypto-42</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active home" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Coinye West Coins</a></li>
+                                <li><a class="dropdown-item" href="#">Anonycoin</a></li>
+                                <li><a class="dropdown-item" href="#">Dodgecoin</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex nav-item">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    
+    
+    
+    
+        <!--Carousel-->
+    
+        <div id="image-carousel" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-3OXW0T2NvMcObhO2x3Y3Hk7cTwdfu-adQ&usqp=CAU" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="data:image/jpeg;base64,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" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Cryptocurrency_and_Blockchain.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+        </div>
+    
+        <!--Description-->
+    
+        <h1>
+            Invest in new cryptocurrencies. Make your future a smarter one.
+        </h1>
+        <p>
+            Ten years ago, most people would have laughed if you said you hold part of your investment portfolio in cryptocurrency —
+            a type of virtual currency that is secured through various cryptographic and computer-generated means. But these days,
+            you might be seen as behind on the times if you don't currently invest, or if you have never traded a single Bitcoin,
+            Ethereum, or Litecoin in your life. Like it or not, cryptocurrency is practically everywhere these days and no longer
+            just for day traders and nerds. In fact, many traditional businesses are integrating cryptocurrency into their platforms
+            in some form, or using it as a means to launch other types of products.
+    
+        </p>
+     
+       </div> 
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-4 mt-3">
+            <div class="card" style="min-width: 18em; background-color: black;">
+                <img src="https://cdn.vox-cdn.com/thumbor/moVK69VZYmD60twVvT2NeVS-u1E=/0x15:640x442/1400x1400/filters:focal(0x15:640x442):format(png)/cdn.vox-cdn.com/assets/3845503/coinyefish.png" class="card-img-top" alt="Coinye West">
+                <div class="card-body" style="color: white;">
+                  <h5 class="card-title product-title">Coinye West Coins - #1</h5>
+                  <p class="card-text product-text">Authentic Kanye Crypto</p>
+                  <p class="card-text product-text">Platinum package</p>
+                  <p class="card-text product-text">£100,000 / KWC</p>
+                  <div class="card-button col text-center">
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                  </div>  
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-3">
+            <div class="card bg-success" style="min-width: 18rem;">
+                <img src="https://cryptomining-blog.com/wp-content/uploads/2014/01/memecoin-scypr-crypto.png" class="card-img-top" alt="Anonycoin">
+                <div class="card-body" style="color: white;">
+                    <h5 class="card-title product-title">Anonycoin - #2</h5>
+                    <p class="card-text product-text">Rare and limited availability Anonycoin</p>
+                    <p class="card-text product-text">Premium users only</p>
+                    <p class="card-text product-text">£5,000 / ANC</p>
+                    <div class="card-button col text-center">
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div> 
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-3">
+            <div class="card" style="min-width: 18rem; background-color: blueviolet;">
+                <img src="https://miro.medium.com/max/300/1*ceOSe1t8yg-9LvQA9r-MJg.png" class="card-img-top" alt="Dogecoin">
+                <div class="card-body" style="color: white;">
+                    <h5 class="card-title product-title">Dogecoin - #3</h5>
+                    <p class="card-text product-text">OG Dogecoin External Wallets</p>
+                    <p class="card-text product-text">Basic</p>
+                    <p class="card-text product-text">£0.39 / DOGE</p>
+                    <div class="card-button col text-center">
+                        <a href="#" class="btn btn-primary">Buy now</a>
+                    </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer container">
+        <div class="row">
+            <div class="col-sm-3 mt-3">
+            <div class="footer-card" style="min-width: 18em;">
+                <div class="card-body footer-card-body" style="color: white;">
+                    <h5 class="card-title footer-title">CONTENT</h5>
+                    <a href="#"><p class="card-text footer-text">Sign Up for limited edition premium Crypto-42+ account</p></a>
+                    <a href="#"><p class="card-text footer-text">Enable two-factor authentication (2FA)</p></a>
+                    <a href="#"><p class="card-text footer-text">FAQs</p></a>
+                    <a href="#"><p class="card-text footer-text">Find us</p></a> 
+                </div>
+                </div>
+              </div>
+              <div class="col-sm-3 mt-3">
+                <div class="footer-card" style="min-width: 18rem;">
+                    <div class="card-body footer-card-body" style="color: white;">
+                        <h5 class="card-title footer-title">NEWS</h5>
+                        <a href="#"><p class="card-text footer-text">Elon Musk buys $1 trillion Coinye West Coins surging share prices</p></a>
+                        <a href="#"><p class="card-text footer-text">Ben Carter breaks Shor's algorithm using wooden spoon</p></a>
+                        <a href="#"><p class="card-text footer-text">Skynet turned off after missing pixel in sky patched by software engineers at Bright Network</p></a>  
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 mt-3">
+                <div class="footer-card" style="min-width: 18rem;">
+                    <div class="card-body footer-card-body" style="color: white;">
+                        <h5 class="card-title footer-title">GET IN TOUCH</h5> 
+                        <form>
+                            <div class="form-group" style="margin-bottom: 10px;">
+                              <label for="first_Name" style="margin-bottom: 5px;">First name</label>
+                              <input type="text" class="form-control" id="first_name" placeholder="First name" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 10px;">
+                              <label for="last_Name" style="margin-bottom: 5px;">Last name</label>
+                              <input type="text" class="form-control" id="last_name" placeholder="Last name" required>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 10px;">
+                              <label for="country_select" style="margin-bottom: 5px;">Country</label>
+                              <select class="form-control" id="country_select" required>
+                                <option>United Kingdom</option>
+                                <option>United States</option>
+                                <option>Mars</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for="Message" style="margin-bottom: 5px;">Message</label>
+                              <textarea class="form-control" id="message_area" rows="3" required></textarea>
+                            </div>
+                            <div class="card-button col text-center">
+                                <button type="submit" class="btn btn-primary mb-2">Submit message</button>
+                            <div>
+                          </form>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="contact">
+    <h2 style="color: white;">Contact form</h2>
+    <form action="/contact-us" method="POST">
+      <input type="text" placeholder="Your_email@email.com" name="email"></input>
+      <br/>
+      <br/>
+      <textarea cols="30" rows="4" placeholder="your message..."></textarea>
+      
+      <br/>
+      <br/>
+      <button type="submit">Send</button>
+    </form>
+  </div> -->
